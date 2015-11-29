@@ -15,7 +15,7 @@ Prenez le temps de parcourir l'ensemble des options.
 
 Exemple de fichier Javascript utilisant Ajax:
 
-```
+```javascript
 jQuery(document).ready(function($) {
 	$.ajax({
 		url: 'js/test-json.js' ,
