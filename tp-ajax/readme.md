@@ -31,12 +31,71 @@ jQuery(document).ready(function($) {
         });
 });
 ```
--> Que fait ce morceau de code ?
+**Question: Que fait ce morceau de code ?**
 
 ### Parser un fichier JSON
 
 "Parser" signifie que l'on extrait des données au sein d'en ensemble de données.
+
 Ici, parser le fichier JSON signifie récupérer les données dont on a besoin parmi l'ensemble des données reçues.
+
+On travaille principalement avec des objets. Par exemple:
+
+```javascript
+{
+    "id": 0,
+    "school": "MOS",
+    "town": "Granville",
+    "country": "france",
+}
+```
+
+Il est obligatoire de séparer toutes les lignes par une virgule, **sauf après la dernière**
+
+Ici, l'objet a plusieurs propriétés: `id`, `school`, `town` et `country`.
+
+Pour acceder à la valeur d'une propriété d'un objet, on utilise le `.`
+
+Si, par exemple, nous reçevons les données de ce fichier dans une variable `data`, on accèdera à "school" grâce à `data.school`, qui renverra "MOS".
+
+Il est également possible d'utiliser des tableaux au sein d'un fichier JSON:
+
+```javascript
+{
+    "id": 0,
+    "school": "MOS",
+    "town": "Granville",
+    "country": "france",
+    "pupils": [
+        "Jean",
+        "Louise",
+        "Mehdi",
+        "Alex",
+        "Julie"
+    ]
+}
+```
+
+Si l'on souhaite parcourir le tableau des élèves, on utilisera data.pupils.
+`data.pupils[0]` renverra "Jean".
+
+Utiliser un tableau "clé->valeur" est aussi possible:
+
+```javascript
+{
+    "id": 0,
+    "school": "MOS",
+    "town": "Granville",
+    "country": "france",
+    "teachers": [
+        {"name":"FX","location":"Granville","topic":"Système"},
+        {"name":"Willy","location":"Caen","topic":"Design"},
+        {"name":"Sylvain","location":"Caen","topic":"Dev"}
+    ]
+}
+```
+
+La matière enseignée par FX sera récupérée grâce à `data.teachers[0].topic`
 
 # TP
 
