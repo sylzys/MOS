@@ -48,6 +48,7 @@ Permet de rechercher une occurence (possibilité d'utiliser les expressions rég
 ### TP
 
 Considérant la table `utilisateur` suivante
+
 | id | prenom | nom     | email                 | age |
 |----|--------|---------|-----------------------|-----|
 | 1  | Jean   | Valjean | j.valjean@gmail.com   | 42  |
@@ -58,7 +59,7 @@ Considérant la table `utilisateur` suivante
 | 6  | Mélusine | Enfaillitte   | mel@enfaillite.com | 45  |
 | 7  | Marie  | Jeanne   | medhi.passa@gmail.fr  | 19  |
 | 8  | Jean  | Bonneau   | jambonneau@lol.tv  | 24  |
-| 9  | Annie  | Versaire   | annie.versaire@gmail.fr  | 52  |
+| 9  | Annie  | Versaire | annie.versaire@gmail.fr  | 52  |
 | 10 | Hassan  | Cehef   | hassan@ratp.fr  | 23  |
 
 1. Que retourne la requête suivante :
